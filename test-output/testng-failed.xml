@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ExecutionEngine.RPAppEveCreation">
+      <class name="ExecutionEngine.ApplicationSubmitTest">
         <methods>
           <include name="SignIn"/>
-          <include name="AppRI"/>
+          <include name="ApplicationSubmit"/>
         </methods>
-      </class> <!-- ExecutionEngine.RPAppEveCreation -->
+      </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
