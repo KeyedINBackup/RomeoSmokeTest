@@ -24,7 +24,7 @@ public class Filedelete {
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 //	  	dr.findElement(By.xpath(".//*[@id='content']/ul/li[4]/a")).click();
 		dr.findElement(By.id("txtUsername")).sendKeys("su");
-		dr.findElement(By.id("txtPassword")).sendKeys("wlu@ROMEO123s");
+		dr.findElement(By.id("txtPassword")).sendKeys("sudemo");
 		dr.findElement(By.id("btn_SignIn")).click();
 		Set<String> ids = dr.getWindowHandles();
 		Iterator<String> it = ids.iterator();
@@ -41,7 +41,7 @@ public class Filedelete {
 		ReviewActivityStatus();
 		letterDoc();
 		EventActivity();
-//		EventCategory();
+		EventCategory();
 		EmailBody();
 		OtherSigningAuthority();
 		InvestigatorDeletion();
@@ -218,7 +218,7 @@ public class Filedelete {
   @BeforeMethod
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("http://laurierqa.researchservicesoffice.com/Romeo");
+		dr.navigate().to("http://qa.researchservicesoffice.com/ROMEO/");
 		
   }
 

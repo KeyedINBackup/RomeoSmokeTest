@@ -6,7 +6,8 @@
       <class name="ExecutionEngine.ApplicationSubmitTest">
         <methods>
           <include name="SignIn"/>
-          <include name="ApplicationSubmit"/>
+          <include name="EOF"/>
+          <include name="ApplicationRMI"/>
         </methods>
       </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
     </classes>

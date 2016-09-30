@@ -26,7 +26,7 @@ public class RomeoFileCreation {
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 //	  	dr.findElement(By.xpath(".//*[@id='content']/ul/li[4]/a")).click();
 		dr.findElement(By.id("txtUsername")).sendKeys("su");
-		dr.findElement(By.id("txtPassword")).sendKeys("occi@ROMEO123s");
+		dr.findElement(By.id("txtPassword")).sendKeys("sudemo");
 		dr.findElement(By.id("btn_SignIn")).click();
 		Set<String> ids = dr.getWindowHandles();
 		Iterator<String> it = ids.iterator();
@@ -76,7 +76,7 @@ public class RomeoFileCreation {
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imtbtnAddNew")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtName")).sendKeys("test1");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorGivenName")).sendKeys("pp1");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys("ppromeotest1@gmail.com ");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys("ppromeotest1@mailinator.com");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_cbValid")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl00_imgbtnAddNew")).click();
 		Select FacultyUnit=new Select(dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl03_EditFormControl_ddlUnit")));
@@ -90,7 +90,7 @@ public class RomeoFileCreation {
 		Alert alt=dr.switchTo().alert();
 		alt.accept();		
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imgbtnCancelTop")).click();
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtMail")).sendKeys("ppromeotest1@gmail.com");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtMail")).sendKeys("ppromeotest1@mailinator.com");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imgbtnSearch")).click();
 		System.out.println("New Investigator is created and Verified successfully");
 		WebElement InvID=dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_dgInvestigator_ctl03_lblInvestigatorID"));
@@ -109,7 +109,7 @@ public class RomeoFileCreation {
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imtbtnAddNew")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtName")).sendKeys("test");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorGivenName")).sendKeys("pp");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys("ppromeotest@gmail.com");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys("ppromeotest@mailinator.com");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_cbValid")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl00_imgbtnAddNew")).click();
 		Select FacultyUnit=new Select(dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl03_EditFormControl_ddlUnit")));
@@ -123,7 +123,7 @@ public class RomeoFileCreation {
 		Alert alt=dr.switchTo().alert();
 		alt.accept();		
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imgbtnCancelTop")).click();
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtMail")).sendKeys("ppromeotest@gmail.com");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtMail")).sendKeys("ppromeotest@mailinator.com");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imgbtnSearch")).click();
 		System.out.println("New Investigator is created and Verified successfully");
 		WebElement InvID=dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_dgInvestigator_ctl03_lblInvestigatorID"));
@@ -379,7 +379,7 @@ public class RomeoFileCreation {
   @BeforeMethod
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("https://OCCIQA.researchservicesoffice.com/Romeo ");
+		dr.navigate().to("http://qa.researchservicesoffice.com/ROMEO/");
 		
   }
 

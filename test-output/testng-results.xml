@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62302" started-at="2016-09-28T14:14:50Z" finished-at="2016-09-28T14:15:53Z">
+  <suite name="Default suite" duration-ms="43959" started-at="2016-09-30T14:44:18Z" finished-at="2016-09-30T14:45:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62302" started-at="2016-09-28T14:14:50Z" finished-at="2016-09-28T14:15:53Z">
+    <test name="Default test" duration-ms="43959" started-at="2016-09-30T14:44:18Z" finished-at="2016-09-30T14:45:01Z">
       <class name="ExecutionEngine.ApplicationSubmitTest">
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@594680]" name="SignIn" is-config="true" duration-ms="16992" started-at="2016-09-28T19:44:50Z" finished-at="2016-09-28T19:45:07Z">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@2d8a59]" name="SignIn" is-config="true" duration-ms="16305" started-at="2016-09-30T20:14:18Z" finished-at="2016-09-30T20:14:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="ApplicationSubmit()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@594680]" name="ApplicationSubmit" duration-ms="44233" started-at="2016-09-28T19:45:07Z" finished-at="2016-09-28T19:45:52Z">
+        <test-method status="PASS" signature="ApplicationApproval()[pri:4, instance:ExecutionEngine.ApplicationSubmitTest@2d8a59]" name="ApplicationApproval" duration-ms="26643" started-at="2016-09-30T20:14:34Z" finished-at="2016-09-30T20:15:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ApplicationSubmit -->
-        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@594680]" name="EOF" is-config="true" duration-ms="1051" started-at="2016-09-28T19:45:52Z" finished-at="2016-09-28T19:45:53Z">
+        </test-method> <!-- ApplicationApproval -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@2d8a59]" name="EOF" is-config="true" duration-ms="991" started-at="2016-09-30T20:15:00Z" finished-at="2016-09-30T20:15:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EOF -->
