@@ -16,7 +16,7 @@ public class ApplicationSubmitTest {
 	
 	public static WebDriver dr;
 	
-  @Test(enabled=false, priority=1)
+  @Test(enabled=true, priority=1)
   public void ApplicationSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@mailinator.com");
@@ -59,10 +59,11 @@ public class ApplicationSubmitTest {
 	  TimeUnit.SECONDS.sleep(2);
 	  dr.findElement(By.id("btnSubmit")).click();
 	  System.out.println("Application submitted successfuly");
-	 
+	  TimeUnit.SECONDS.sleep(3);
+	  
   }
   
-  @Test(enabled=false, priority=2)
+  @Test(enabled=true, priority=2)
   public void ApplicationRMI() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@mailinator.com");
@@ -105,10 +106,11 @@ public class ApplicationSubmitTest {
 	  dr.findElement(By.id("txtComments")).sendKeys("Request More Information");
 	  TimeUnit.SECONDS.sleep(2);
 	  dr.findElement(By.id("btnSubmit")).click();
-	  System.out.println("Application send for RMI successfuly");  
+	  System.out.println("Application send for RMI successfuly");
+	  TimeUnit.SECONDS.sleep(3);
   }
   
-  @Test(enabled=false, priority=3)
+  @Test(enabled=true, priority=3)
   public void ApplicationReSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@mailinator.com");
@@ -119,9 +121,10 @@ public class ApplicationSubmitTest {
 	  WebElement Frame5=dr.findElement(By.name("WorkFlowCommentsWindow"));
 	  dr.switchTo().frame(Frame5);
 	  dr.findElement(By.id("txtComments")).sendKeys("Application ReSubmit");
-	  TimeUnit.SECONDS.sleep(2);
+	  TimeUnit.SECONDS.sleep(3);
 	  dr.findElement(By.id("btnSubmit")).click();
 	  System.out.println("Application Resubmitted successfuly");
+	  TimeUnit.SECONDS.sleep(3);
 	 
   }
   
@@ -138,7 +141,8 @@ public class ApplicationSubmitTest {
 	  dr.findElement(By.id("txtComments")).sendKeys("Application Approved");
 	  TimeUnit.SECONDS.sleep(2);
 	  dr.findElement(By.id("btnSubmit")).click();
-	  System.out.println("Application Approved successfuly");  
+	  System.out.println("Application Approved successfuly");
+	  TimeUnit.SECONDS.sleep(3);
   }
   
   

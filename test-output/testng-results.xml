@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54317" started-at="2016-10-01T11:54:31Z" finished-at="2016-10-01T11:55:25Z">
+  <suite name="example suite 1" duration-ms="442150" started-at="2016-10-03T14:31:33Z" finished-at="2016-10-03T14:38:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54317" started-at="2016-10-01T11:54:31Z" finished-at="2016-10-01T11:55:25Z">
-      <class name="ExecutionEngine.awdUserAppReview">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@115e166]" name="beforeMethod" is-config="true" duration-ms="13610" started-at="2016-10-01T17:24:31Z" finished-at="2016-10-01T17:24:45Z">
+    <test name="Regression suite" duration-ms="442150" started-at="2016-10-03T14:31:33Z" finished-at="2016-10-03T14:38:56Z">
+      <class name="ExecutionEngine.ApplicationSubmitTest">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="SignIn" is-config="true" duration-ms="13663" started-at="2016-10-03T20:01:33Z" finished-at="2016-10-03T20:01:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ApplicationReSubmit()[pri:2, instance:ExecutionEngine.awdUserAppReview@115e166]" name="ApplicationReSubmit" duration-ms="38678" started-at="2016-10-01T17:24:45Z" finished-at="2016-10-01T17:25:23Z">
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="ApplicationSubmit()[pri:1, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="ApplicationSubmit" duration-ms="43543" started-at="2016-10-03T20:01:47Z" finished-at="2016-10-03T20:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationSubmit -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="EOF" is-config="true" duration-ms="640" started-at="2016-10-03T20:02:31Z" finished-at="2016-10-03T20:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EOF -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="SignIn" is-config="true" duration-ms="15733" started-at="2016-10-03T20:02:31Z" finished-at="2016-10-03T20:02:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="ApplicationRMI()[pri:2, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="ApplicationRMI" duration-ms="46339" started-at="2016-10-03T20:02:47Z" finished-at="2016-10-03T20:03:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationRMI -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="EOF" is-config="true" duration-ms="493" started-at="2016-10-03T20:03:33Z" finished-at="2016-10-03T20:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EOF -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="SignIn" is-config="true" duration-ms="12787" started-at="2016-10-03T20:03:34Z" finished-at="2016-10-03T20:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="ApplicationReSubmit()[pri:3, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="ApplicationReSubmit" duration-ms="31827" started-at="2016-10-03T20:03:47Z" finished-at="2016-10-03T20:04:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ApplicationReSubmit -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@115e166]" name="afterMethod" is-config="true" duration-ms="2015" started-at="2016-10-01T17:25:23Z" finished-at="2016-10-01T17:25:25Z">
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="EOF" is-config="true" duration-ms="510" started-at="2016-10-03T20:04:18Z" finished-at="2016-10-03T20:04:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EOF -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="SignIn" is-config="true" duration-ms="15635" started-at="2016-10-03T20:04:19Z" finished-at="2016-10-03T20:04:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="ApplicationApproval()[pri:4, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="ApplicationApproval" duration-ms="32068" started-at="2016-10-03T20:04:35Z" finished-at="2016-10-03T20:05:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationApproval -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.ApplicationSubmitTest@12b71eb]" name="EOF" is-config="true" duration-ms="610" started-at="2016-10-03T20:05:07Z" finished-at="2016-10-03T20:05:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EOF -->
+      </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
+      <class name="ExecutionEngine.awdUserAppReview">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="beforeMethod" is-config="true" duration-ms="6818" started-at="2016-10-03T20:05:07Z" finished-at="2016-10-03T20:05:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AwdUserRMI()[pri:1, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="AwdUserRMI" duration-ms="44892" started-at="2016-10-03T20:05:14Z" finished-at="2016-10-03T20:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AwdUserRMI -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="afterMethod" is-config="true" duration-ms="4393" started-at="2016-10-03T20:05:59Z" finished-at="2016-10-03T20:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="beforeMethod" is-config="true" duration-ms="7051" started-at="2016-10-03T20:06:03Z" finished-at="2016-10-03T20:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ApplicationReSubmit()[pri:2, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="ApplicationReSubmit" duration-ms="44824" started-at="2016-10-03T20:06:10Z" finished-at="2016-10-03T20:06:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationReSubmit -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="afterMethod" is-config="true" duration-ms="452" started-at="2016-10-03T20:06:55Z" finished-at="2016-10-03T20:06:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="beforeMethod" is-config="true" duration-ms="6790" started-at="2016-10-03T20:06:56Z" finished-at="2016-10-03T20:07:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AwdUserAppApproval()[pri:3, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="AwdUserAppApproval" duration-ms="112371" started-at="2016-10-03T20:07:02Z" finished-at="2016-10-03T20:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AwdUserAppApproval -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserAppReview@1441dc0]" name="afterMethod" is-config="true" duration-ms="690" started-at="2016-10-03T20:08:55Z" finished-at="2016-10-03T20:08:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- ExecutionEngine.awdUserAppReview -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Regression suite -->
+  </suite> <!-- example suite 1 -->
 </testng-results>
