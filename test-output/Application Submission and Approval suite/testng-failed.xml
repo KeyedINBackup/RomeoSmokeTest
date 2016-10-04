@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Application Submission and Approval suite]">
+  <test name="Regression suite(failed)">
+    <classes>
+      <class name="ExecutionEngine.ApplicationSubmitTest">
+        <methods>
+          <include name="SignIn"/>
+          <include name="EOF"/>
+        </methods>
+      </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
+      <class name="ExecutionEngine.awdUserAppReview">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="AwdUserAppApproval"/>
+        </methods>
+      </class> <!-- ExecutionEngine.awdUserAppReview -->
+    </classes>
+  </test> <!-- Regression suite(failed) -->
+</suite> <!-- Failed suite [Application Submission and Approval suite] -->

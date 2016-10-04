@@ -19,7 +19,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=1)
   public void ApplicationSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@mailinator.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("APPLY NEW")).click();
 	  dr.findElement(By.linkText("Test Award App Form for Smoke Test checkup by PP Support.")).click();
@@ -66,14 +66,14 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=2)
   public void ApplicationRMI() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@mailinator.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@gmail.com");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: New*")).click();
-	  WebElement TR=dr.findElement(By.xpath("html/body/form/div[4]/div[3]/div[8]/div[1]/div[2]/table/tbody"));
+	  WebElement TR=dr.findElement(By.xpath("html/body/form/div[4]/div[4]/div[1]/div[2]/table/tbody"));
 	  List<WebElement> AppFormRow=TR.findElements(By.tagName("tr"));
 	  int n=AppFormRow.size();
 	  System.out.println(n);
-	  String S1="html/body/form/div[4]/div[3]/div[8]/div[1]/div[2]/table/tbody/tr[";
+	  String S1="html/body/form/div[4]/div[4]/div[1]/div[2]/table/tbody/tr[";
 	  String S2="]/td[1]/div/p/a";
 	  dr.findElement(By.xpath(S1+n+S2)).click();
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_tbsApplicationForm']/div/ul/li[5]/a/span/span/span")).click();
@@ -83,11 +83,13 @@ public class ApplicationSubmitTest {
 	  System.out.println(no);
 	  for(int i=1;i<=no;i++){
 	  String S3="html/body/form/div[4]/div[2]/div[1]/div[2]/div[2]/div[3]/div[2]/table/tbody/tr[";
-	  String S4="]/td[2]/input";
-	  boolean Aprocess=dr.findElement(By.xpath(S3+i+S4)).isDisplayed();
-	  System.out.println(Aprocess);
-	  if(Aprocess=true){
-		  dr.findElement(By.xpath(S3+i+S4)).click();
+	  String S4="]/td[4]";
+	  String S5="]/td[2]/input";
+	  WebElement DepName=dr.findElement(By.xpath(S3+i+S4));
+	  String Name=DepName.getText();
+	  System.out.println(Name);
+	  if(Name.equalsIgnoreCase("pp test CSA")){
+		  dr.findElement(By.xpath(S3+i+S5)).click();
 		  break;
 	  }
 	  }
@@ -113,7 +115,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=3)
   public void ApplicationReSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@mailinator.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: Requiring Attention*")).click();
 	  dr.findElement(By.linkText("Edit")).click();
@@ -131,7 +133,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=4)
   public void ApplicationApproval() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@mailinator.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@gmail.com");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: New*")).click();
 	  dr.findElement(By.linkText("Review")).click();
@@ -150,11 +152,11 @@ public class ApplicationSubmitTest {
   @BeforeMethod
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("http://qa.researchservicesoffice.com/Romeo.Researcher");
+		dr.navigate().to("https://trentuqa.researchservicesoffice.com/Romeo.Researcher/");
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 //	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("sudemo");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("trent@ROMEO123s");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 		
   }

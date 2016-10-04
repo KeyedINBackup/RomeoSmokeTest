@@ -46,11 +46,11 @@ public class RPAppEveCreation {
   @BeforeTest
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("http://qa.researchservicesoffice.com/Romeo.Researcher");
+		dr.navigate().to("https://trentuqa.researchservicesoffice.com/Romeo.Researcher/");
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 //	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("sudemo");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("trent@ROMEO123s");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 		
   }

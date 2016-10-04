@@ -18,12 +18,12 @@ import org.testng.annotations.AfterMethod;
 public class awdUserAppReview {
 	public static WebDriver dr;
 	
-	@Test(enabled=true, priority=1)
+	@Test(enabled=false, priority=1)
 	public void AwdUserRMI() throws InterruptedException, AWTException {
 	  	
-		dr.findElement(By.xpath("html/body/div[1]/ul/li[4]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.findElement(By.id("txtUsername")).sendKeys("awd_user");
-		dr.findElement(By.id("txtPassword")).sendKeys("demo");
+		dr.findElement(By.id("txtPassword")).sendKeys("trent@ROMEO123");
 		dr.findElement(By.id("btn_SignIn")).click();
 		for(String win2:dr.getWindowHandles()){
 			dr.switchTo().window(win2);
@@ -49,14 +49,14 @@ public class awdUserAppReview {
 		System.out.println("Applicationsen for More Information successfuly");
 	  }
   
-  @Test(enabled=true, priority=2)
+  @Test(enabled=false, priority=2)
   public void ApplicationReSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("sudemo");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("trent@ROMEO123s");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@mailinator.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: Requiring Attention*")).click();
 	  dr.findElement(By.linkText("Edit")).click();
@@ -67,15 +67,15 @@ public class awdUserAppReview {
 	  TimeUnit.SECONDS.sleep(2);
 	  dr.findElement(By.id("btnSubmit")).click();
 	  System.out.println("Application Resubmitted to awduser successfuly");
-	  TimeUnit.SECONDS.sleep(4);
+	  TimeUnit.SECONDS.sleep(5);
   }
   
   @Test(enabled=true, priority=3)
 	public void AwdUserAppApproval() throws InterruptedException, AWTException, IOException {
 	  	
-		dr.findElement(By.xpath("html/body/div[1]/ul/li[4]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.findElement(By.id("txtUsername")).sendKeys("awd_user");
-		dr.findElement(By.id("txtPassword")).sendKeys("demo");
+		dr.findElement(By.id("txtPassword")).sendKeys("trent@ROMEO123");
 		dr.findElement(By.id("btn_SignIn")).click();
 		for(String win2:dr.getWindowHandles()){
 			dr.switchTo().window(win2);
@@ -108,7 +108,7 @@ public class awdUserAppReview {
 		dr.findElement(By.id("ctl02_ctl00_radgrdCommunication_ctl00_ctl02_ctl00_imgbtnAddNew")).click();
 		WebElement ComposeMailFrame=dr.findElement(By.name("rwSendEmail"));
 		dr.switchTo().frame(ComposeMailFrame);
-		dr.findElement(By.id("txtTo")).sendKeys("ppromeotest@mailinator.com");
+		dr.findElement(By.id("txtTo")).sendKeys("ppromeotest@gmail.com");
 		WebElement EMailContentFrame=dr.findElement(By.id("rtbEmailBody_contentIframe"));
 		dr.switchTo().frame(EMailContentFrame);
 		dr.findElement(By.xpath("html/body")).sendKeys("This is sample mail for testing purpose");
@@ -131,7 +131,8 @@ public class awdUserAppReview {
   @BeforeMethod
   public void beforeMethod() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("http://qa.researchservicesoffice.com");
+		dr.navigate().to("https://trentuqa.researchservicesoffice.com/");
+//		dr.navigate().to("https://rtm.researchservicesoffice.com/Romeo.Researcher");
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		

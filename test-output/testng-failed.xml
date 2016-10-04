@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [example suite 1]">
-  <test name="Regression suite(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="ExecutionEngine.ApplicationSubmitTest">
+      <class name="ExecutionEngine.Filedelete">
         <methods>
-          <include name="SignIn"/>
           <include name="EOF"/>
+          <include name="FacultyFileCreation"/>
+          <include name="SignIn"/>
         </methods>
-      </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
-      <class name="ExecutionEngine.awdUserAppReview">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-          <include name="AwdUserAppApproval"/>
-        </methods>
-      </class> <!-- ExecutionEngine.awdUserAppReview -->
+      </class> <!-- ExecutionEngine.Filedelete -->
     </classes>
-  </test> <!-- Regression suite(failed) -->
-</suite> <!-- Failed suite [example suite 1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
