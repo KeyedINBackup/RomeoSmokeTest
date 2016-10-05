@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.eclipse.jdt.internal.compiler.impl.Constant;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +15,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
+import Utility.Constants;
+
 public class Filedelete {
 	public static WebDriver dr;
 	public static String win1, InvestigatorID1, InvestigatorID2;
@@ -23,8 +26,8 @@ public class Filedelete {
 	  	dr.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 //	  	dr.findElement(By.xpath(".//*[@id='content']/ul/li[4]/a")).click();
-		dr.findElement(By.id("txtUsername")).sendKeys("su");
-		dr.findElement(By.id("txtPassword")).sendKeys("trent@ROMEO123s");
+		dr.findElement(By.id("txtUsername")).sendKeys(Constants.SuperUser);
+		dr.findElement(By.id("txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("btn_SignIn")).click();
 		Set<String> ids = dr.getWindowHandles();
 		Iterator<String> it = ids.iterator();
@@ -218,7 +221,7 @@ public class Filedelete {
   @BeforeMethod
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("https://trentuqa.researchservicesoffice.com/Romeo/");
+		dr.navigate().to(Constants.RomeoURL);
 		
   }
 

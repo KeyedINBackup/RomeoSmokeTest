@@ -10,6 +10,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import Utility.Constants;
+
 public class RPAppEveCreation {
 	public static WebDriver dr;
 	
@@ -46,11 +48,11 @@ public class RPAppEveCreation {
   @BeforeTest
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("https://trentuqa.researchservicesoffice.com/Romeo.Researcher/");
+		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 //	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("trent@ROMEO123s");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 		
   }

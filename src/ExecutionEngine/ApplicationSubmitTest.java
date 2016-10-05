@@ -12,6 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import Utility.Constants;
+
 public class ApplicationSubmitTest {
 	
 	public static WebDriver dr;
@@ -19,7 +21,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=1)
   public void ApplicationSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.mail2);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("APPLY NEW")).click();
 	  dr.findElement(By.linkText("Test Award App Form for Smoke Test checkup by PP Support.")).click();
@@ -66,7 +68,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=2)
   public void ApplicationRMI() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@gmail.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.mail1);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: New*")).click();
 	  WebElement TR=dr.findElement(By.xpath("html/body/form/div[4]/div[4]/div[1]/div[2]/table/tbody"));
@@ -115,7 +117,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=3)
   public void ApplicationReSubmit() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.mail2);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: Requiring Attention*")).click();
 	  dr.findElement(By.linkText("Edit")).click();
@@ -133,7 +135,7 @@ public class ApplicationSubmitTest {
   @Test(enabled=true, priority=4)
   public void ApplicationApproval() throws IOException, InterruptedException {
 	  dr.findElement(By.xpath(".//*[@id='ctl00_ContentPlaceHolder1_panel1']/ul/li[10]/a")).click();
-	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest1@gmail.com");
+	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.mail1);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 	  dr.findElement(By.linkText("Applications: New*")).click();
 	  dr.findElement(By.linkText("Review")).click();
@@ -152,11 +154,11 @@ public class ApplicationSubmitTest {
   @BeforeMethod
   public void SignIn() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to("https://trentuqa.researchservicesoffice.com/Romeo.Researcher/");
+		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 //	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("trent@ROMEO123s");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
 		
   }

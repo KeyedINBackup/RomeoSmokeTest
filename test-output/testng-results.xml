@@ -2,27 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="160557" started-at="2016-10-04T16:02:02Z" finished-at="2016-10-04T16:04:43Z">
+  <suite name="Default suite" duration-ms="73934" started-at="2016-10-05T13:20:52Z" finished-at="2016-10-05T13:22:06Z">
     <groups>
-      <group name="FileCreation">
-        <method signature="Filedelete.FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" class="ExecutionEngine.Filedelete"/>
-      </group> <!-- FileCreation -->
     </groups>
-    <test name="Default test" duration-ms="160557" started-at="2016-10-04T16:02:02Z" finished-at="2016-10-04T16:04:43Z">
-      <class name="ExecutionEngine.Filedelete">
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="SignIn" is-config="true" duration-ms="30208" started-at="2016-10-04T21:32:02Z" finished-at="2016-10-04T21:32:32Z">
+    <test name="Default test" duration-ms="73934" started-at="2016-10-05T13:20:52Z" finished-at="2016-10-05T13:22:06Z">
+      <class name="ExecutionEngine.awdUserEventsReview">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="beforeMethod" is-config="true" duration-ms="12420" started-at="2016-10-05T18:50:52Z" finished-at="2016-10-05T18:51:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" duration-ms="123784" started-at="2016-10-04T21:32:32Z" finished-at="2016-10-04T21:34:36Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="AwdUserEventApproval()[pri:6, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="AwdUserEventApproval" duration-ms="60492" started-at="2016-10-05T18:51:05Z" finished-at="2016-10-05T18:52:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FacultyFileCreation -->
-        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="EOF" is-config="true" duration-ms="6551" started-at="2016-10-04T21:34:36Z" finished-at="2016-10-04T21:34:43Z">
+        </test-method> <!-- AwdUserEventApproval -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="afterMethod" is-config="true" duration-ms="1007" started-at="2016-10-05T18:52:05Z" finished-at="2016-10-05T18:52:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EOF -->
-      </class> <!-- ExecutionEngine.Filedelete -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- ExecutionEngine.awdUserEventsReview -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
