@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73934" started-at="2016-10-05T13:20:52Z" finished-at="2016-10-05T13:22:06Z">
+  <suite name="Default suite" duration-ms="78505" started-at="2016-10-06T06:14:22Z" finished-at="2016-10-06T06:15:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73934" started-at="2016-10-05T13:20:52Z" finished-at="2016-10-05T13:22:06Z">
+    <test name="Default test" duration-ms="78505" started-at="2016-10-06T06:14:22Z" finished-at="2016-10-06T06:15:41Z">
       <class name="ExecutionEngine.awdUserEventsReview">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="beforeMethod" is-config="true" duration-ms="12420" started-at="2016-10-05T18:50:52Z" finished-at="2016-10-05T18:51:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="beforeMethod" is-config="true" duration-ms="12147" started-at="2016-10-06T11:44:22Z" finished-at="2016-10-06T11:44:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AwdUserEventApproval()[pri:6, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="AwdUserEventApproval" duration-ms="60492" started-at="2016-10-05T18:51:05Z" finished-at="2016-10-05T18:52:05Z">
+        <test-method status="PASS" signature="AwdUserEventApproval()[pri:6, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="AwdUserEventApproval" duration-ms="65720" started-at="2016-10-06T11:44:34Z" finished-at="2016-10-06T11:45:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AwdUserEventApproval -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@14b9e0c]" name="afterMethod" is-config="true" duration-ms="1007" started-at="2016-10-05T18:52:05Z" finished-at="2016-10-05T18:52:06Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="afterMethod" is-config="true" duration-ms="623" started-at="2016-10-06T11:45:40Z" finished-at="2016-10-06T11:45:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

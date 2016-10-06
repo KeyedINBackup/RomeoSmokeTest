@@ -87,6 +87,7 @@ public class awdUserEventsReview {
 		TimeUnit.SECONDS.sleep(4);
 		dr.findElement(By.id("ctl02_imgbtnSaveAndClose")).click();
 		TimeUnit.SECONDS.sleep(5);
+		System.out.println("Event sent for RMI done successfully");
 	  
   }
   
@@ -191,6 +192,7 @@ public class awdUserEventsReview {
 		dr.findElement(By.id("ctl02_imgbtnSave")).click();
 		dr.findElement(By.id("ctl02_imgbtnSaveAndClose")).click();
 		TimeUnit.SECONDS.sleep(5);
+		System.out.println("Event sent for Review done successfully");
   }
   
   @Test(enabled=false, priority=5)
@@ -223,11 +225,16 @@ public class awdUserEventsReview {
 				break;
 			}
 		}
-		TimeUnit.SECONDS.sleep(3);
-		dr.findElement(By.id("btnSubmit")).click();
+		WebElement TXTfrme = dr.findElement(By.id("txtComments_contentIframe"));
+		dr.switchTo().frame(TXTfrme);
+		dr.findElement(By.xpath("html/body")).sendKeys("Reviewed");
+		dr.switchTo().defaultContent();
+		TimeUnit.SECONDS.sleep(5);
+//		dr.findElement(By.id("btnSubmit")).click();
 		Alert alt=dr.switchTo().alert();
 		alt.accept();
 		TimeUnit.SECONDS.sleep(4);
+		System.out.println("Application Reviewed successfully");
 		dr.findElement(By.partialLinkText("Events: Chair")).click();
 		dr.findElement(By.linkText("View Event")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnReview")).click();
@@ -247,11 +254,15 @@ public class awdUserEventsReview {
 				break;
 			}
 		}
-		TimeUnit.SECONDS.sleep(3);
-		dr.findElement(By.id("btnSubmit")).click();
+		WebElement TXTfrme1 = dr.findElement(By.id("txtComments_contentIframe"));
+		dr.switchTo().frame(TXTfrme1);
+		dr.findElement(By.xpath("html/body")).sendKeys("Reviewed");
+		dr.switchTo().defaultContent();
+		TimeUnit.SECONDS.sleep(5);
 		Alert alt1=dr.switchTo().alert();
 		alt1.accept();
 		TimeUnit.SECONDS.sleep(4);
+		System.out.println("Event Reviewes successfully");
 	  }
 
   @Test(enabled=true, priority=6)
@@ -285,6 +296,7 @@ public class awdUserEventsReview {
 		TimeUnit.SECONDS.sleep(4);
 		dr.findElement(By.id("ctl02_imgbtnSaveAndClose")).click();
 		TimeUnit.SECONDS.sleep(5);
+		System.out.println("Event Approved successfully");
   }
   
   @BeforeMethod

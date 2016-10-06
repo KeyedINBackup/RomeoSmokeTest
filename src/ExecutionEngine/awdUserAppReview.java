@@ -48,7 +48,7 @@ public class awdUserAppReview {
 		object.keyPress(KeyEvent.VK_ENTER);
 		object.keyRelease(KeyEvent.VK_ENTER);
 		TimeUnit.SECONDS.sleep(4);
-		System.out.println("Applicationsen for More Information successfuly");
+		System.out.println("Applicationsen sent for More Information done successfuly");
 	  }
   
   @Test(enabled=false, priority=2)
@@ -127,6 +127,7 @@ public class awdUserAppReview {
 		dr.switchTo().frame(Frame6);
 		dr.findElement(By.id("imgBtnSubmit")).click();
 		TimeUnit.SECONDS.sleep(5);
+		System.out.println("Application Approved successfully");
 	  }
   
   
@@ -135,7 +136,7 @@ public class awdUserAppReview {
 	  	dr= new FirefoxDriver();
 		dr.navigate().to(Constants.RomeoURL);
 //		dr.navigate().to(Constants.RPURL);
-		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+		dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		
   }

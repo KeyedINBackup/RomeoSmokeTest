@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ExecutionEngine.ApplicationSubmitTest">
+      <class name="ExecutionEngine.awdUserAppReview">
         <methods>
-          <include name="SignIn"/>
-          <include name="EOF"/>
           <include name="ApplicationReSubmit"/>
-          <include name="ApplicationApproval"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- ExecutionEngine.ApplicationSubmitTest -->
+      </class> <!-- ExecutionEngine.awdUserAppReview -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

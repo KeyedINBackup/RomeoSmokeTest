@@ -74,7 +74,7 @@ public class ApplicationSubmitTest {
 	  WebElement TR=dr.findElement(By.xpath("html/body/form/div[4]/div[4]/div[1]/div[2]/table/tbody"));
 	  List<WebElement> AppFormRow=TR.findElements(By.tagName("tr"));
 	  int n=AppFormRow.size();
-	  System.out.println(n);
+//	  System.out.println(n);
 	  String S1="html/body/form/div[4]/div[4]/div[1]/div[2]/table/tbody/tr[";
 	  String S2="]/td[1]/div/p/a";
 	  dr.findElement(By.xpath(S1+n+S2)).click();
@@ -82,14 +82,14 @@ public class ApplicationSubmitTest {
 	  WebElement AP=dr.findElement(By.xpath("html/body/form/div[4]/div[2]/div[1]/div[2]/div[2]/div[3]/div[2]/table/tbody"));
 	  List<WebElement> ARow=AP.findElements(By.tagName("tr"));
 	  int no=ARow.size();
-	  System.out.println(no);
+//	  System.out.println(no);
 	  for(int i=1;i<=no;i++){
 	  String S3="html/body/form/div[4]/div[2]/div[1]/div[2]/div[2]/div[3]/div[2]/table/tbody/tr[";
 	  String S4="]/td[4]";
 	  String S5="]/td[2]/input";
 	  WebElement DepName=dr.findElement(By.xpath(S3+i+S4));
 	  String Name=DepName.getText();
-	  System.out.println(Name);
+//	  System.out.println(Name);
 	  if(Name.equalsIgnoreCase("pp test CSA")){
 		  dr.findElement(By.xpath(S3+i+S5)).click();
 		  break;
