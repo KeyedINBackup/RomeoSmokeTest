@@ -50,7 +50,7 @@ public class RPAppEveCreation {
 	  	dr= new FirefoxDriver();
 		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-//	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
+	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
@@ -59,8 +59,8 @@ public class RPAppEveCreation {
 
   @AfterTest
   public void EOF() {
-	  dr.close();
-	  dr.quit();
+//	  dr.close();
+//	  dr.quit();
   }
 
   

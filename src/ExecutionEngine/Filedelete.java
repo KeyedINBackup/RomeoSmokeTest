@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.eclipse.jdt.internal.compiler.impl.Constant;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -44,7 +43,7 @@ public class Filedelete {
 		ReviewActivityStatus();
 		letterDoc();
 		EventActivity();
-		EventCategory();
+//		EventCategory();
 		EmailBody();
 		OtherSigningAuthority();
 		InvestigatorDeletion();

@@ -1,25 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78505" started-at="2016-10-06T06:14:22Z" finished-at="2016-10-06T06:15:41Z">
+  <suite name="Default suite" duration-ms="300054" started-at="2016-10-17T14:09:01Z" finished-at="2016-10-17T14:14:01Z">
     <groups>
+      <group name="FileCreation">
+        <method signature="Filedelete.FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" class="ExecutionEngine.Filedelete"/>
+      </group> <!-- FileCreation -->
     </groups>
-    <test name="Default test" duration-ms="78505" started-at="2016-10-06T06:14:22Z" finished-at="2016-10-06T06:15:41Z">
-      <class name="ExecutionEngine.awdUserEventsReview">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="beforeMethod" is-config="true" duration-ms="12147" started-at="2016-10-06T11:44:22Z" finished-at="2016-10-06T11:44:34Z">
+    <test name="Default test" duration-ms="300054" started-at="2016-10-17T14:09:01Z" finished-at="2016-10-17T14:14:01Z">
+      <class name="ExecutionEngine.Filedelete">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="SignIn" is-config="true" duration-ms="52099" started-at="2016-10-17T19:39:01Z" finished-at="2016-10-17T19:39:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AwdUserEventApproval()[pri:6, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="AwdUserEventApproval" duration-ms="65720" started-at="2016-10-06T11:44:34Z" finished-at="2016-10-06T11:45:40Z">
+        </test-method> <!-- SignIn -->
+        <test-method status="FAIL" signature="FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" duration-ms="246563" started-at="2016-10-17T19:39:53Z" finished-at="2016-10-17T19:44:00Z">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[Unexpected modal dialog (text: Warning !!! Delete request failed
+
+Message :
+-Unable to delete the requested record at this time
+Possible causes :
+-Requested data is been referred): Warning !!! Delete request failed
+
+Message :
+-Unable to delete the requested record at this time
+Possible causes :
+-Requested data is been referred
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'sakthivel-PC', ip: '172.16.11.74', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0'
+*** Element info: {Using=xpath, value=.//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li[2]/a/span}
+Session ID: 88225dbb-15d7-4ed8-a6bf-280979da0dc7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=46.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: Unexpected modal dialog (text: Warning !!! Delete request failed
+
+Message :
+-Unable to delete the requested record at this time
+Possible causes :
+-Requested data is been referred): Warning !!! Delete request failed
+
+Message :
+-Unable to delete the requested record at this time
+Possible causes :
+-Requested data is been referred
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'sakthivel-PC', ip: '172.16.11.74', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0'
+*** Element info: {Using=xpath, value=.//*[@id='ctl00_menuContentPlaceHolder_TemplateRadMenu']/ul/li[2]/a/span}
+Session ID: 88225dbb-15d7-4ed8-a6bf-280979da0dc7
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=46.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:154)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at ExecutionEngine.Filedelete.FacultyDeletion(Filedelete.java:55)
+	at ExecutionEngine.Filedelete.FacultyFileCreation(Filedelete.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AwdUserEventApproval -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:ExecutionEngine.awdUserEventsReview@67aece]" name="afterMethod" is-config="true" duration-ms="623" started-at="2016-10-06T11:45:40Z" finished-at="2016-10-06T11:45:41Z">
+        </test-method> <!-- FacultyFileCreation -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="EOF" is-config="true" duration-ms="1370" started-at="2016-10-17T19:44:00Z" finished-at="2016-10-17T19:44:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- ExecutionEngine.awdUserEventsReview -->
+        </test-method> <!-- EOF -->
+      </class> <!-- ExecutionEngine.Filedelete -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

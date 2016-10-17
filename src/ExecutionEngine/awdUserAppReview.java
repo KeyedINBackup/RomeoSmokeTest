@@ -20,10 +20,10 @@ import Utility.Constants;
 public class awdUserAppReview {
 	public static WebDriver dr;
 	
-	@Test(enabled=false, priority=1)
+	@Test(enabled=true, priority=1)
 	public void AwdUserRMI() throws InterruptedException, AWTException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.findElement(By.id("txtUsername")).sendKeys(Constants.AwardUser);
 		dr.findElement(By.id("txtPassword")).sendKeys(Constants.AwardUserPass);
 		dr.findElement(By.id("btn_SignIn")).click();
@@ -51,9 +51,9 @@ public class awdUserAppReview {
 		System.out.println("Applicationsen sent for More Information done successfuly");
 	  }
   
-  @Test(enabled=false, priority=2)
+  @Test(enabled=true, priority=2)
   public void ApplicationReSubmit() throws IOException, InterruptedException {
-//	  dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
+	  dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 	  dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
@@ -75,7 +75,7 @@ public class awdUserAppReview {
   @Test(enabled=true, priority=3)
 	public void AwdUserAppApproval() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.findElement(By.id("txtUsername")).sendKeys(Constants.AwardUser);
 		dr.findElement(By.id("txtPassword")).sendKeys(Constants.AwardUserPass);
 		dr.findElement(By.id("btn_SignIn")).click();
@@ -134,7 +134,7 @@ public class awdUserAppReview {
   @BeforeMethod
   public void beforeMethod() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to(Constants.RomeoURL);
+		dr.navigate().to(Constants.BaseURL);
 //		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);

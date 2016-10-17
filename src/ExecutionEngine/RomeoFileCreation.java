@@ -110,7 +110,7 @@ public class RomeoFileCreation {
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imtbtnAddNew")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtName")).sendKeys("test");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorGivenName")).sendKeys("pp");
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys("Constants.mail2");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_txtInvestigatorEmail")).sendKeys(Constants.mail2);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_cbValid")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl00_imgbtnAddNew")).click();
 		Select FacultyUnit=new Select(dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_Appointment_radgrdMyAppoinments_ctl00_ctl02_ctl03_EditFormControl_ddlUnit")));
@@ -239,7 +239,7 @@ public class RomeoFileCreation {
 		TimeUnit.SECONDS.sleep(5);
 		dr.findElement(By.xpath("html/body/form/div[9]/div/div[4]/div/table/tbody/tr[3]/td/div/div/ul/li[2]/a")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl00_imgbtnAdd")).click();
-		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_MeetingDateDtPicker_dateInput")).sendKeys("2016/10/22");
+		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_MeetingDateDtPicker_dateInput")).sendKeys("2016/11/22");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_TB_MeetingLocationColumn")).sendKeys("test location");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctrlMasterTableItemElement_txtName")).sendKeys("pp test Committee");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_imgbtnSaveNew")).click();

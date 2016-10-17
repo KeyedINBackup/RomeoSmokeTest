@@ -22,10 +22,10 @@ import Utility.Constants;
 public class awdUserEventsReview {
 	public static WebDriver dr;
 	
-	@Test(enabled=false, priority=1)
+	@Test(enabled=true, priority=1)
 	public void EventSubmit() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
@@ -54,10 +54,10 @@ public class awdUserEventsReview {
 		TimeUnit.SECONDS.sleep(5);
 	  }
   
-  @Test(enabled=false, priority=2)
+  @Test(enabled=true, priority=2)
   public void AwdUserEventRMI() throws IOException, InterruptedException, AWTException {
 	  
-//	  	dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
+	  	dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.findElement(By.id("txtUsername")).sendKeys(Constants.AwardUser);
 		dr.findElement(By.id("txtPassword")).sendKeys(Constants.AwardUserPass);
 		dr.findElement(By.id("btn_SignIn")).click();
@@ -91,10 +91,10 @@ public class awdUserEventsReview {
 	  
   }
   
-  @Test(enabled=false, priority=3)
+  @Test(enabled=true, priority=3)
 	public void EventReSubmit() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
@@ -114,10 +114,10 @@ public class awdUserEventsReview {
 	  }
   
   
-  @Test(enabled=false, priority=4)
+  @Test(enabled=true, priority=4)
 	public void AwdUserEventsentforApproval() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.findElement(By.id("txtUsername")).sendKeys(Constants.AwardUser);
 		dr.findElement(By.id("txtPassword")).sendKeys(Constants.AwardUserPass);
@@ -150,12 +150,12 @@ public class awdUserEventsReview {
 		dr.switchTo().frame(MeetingActFrame);
 		Select Committee=new Select(dr.findElement(By.id("ctl06_ddlCommittee")));
 		Committee.selectByVisibleText("pp test Committee");
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(4);
 		Select Year=new Select(dr.findElement(By.id("ctl06_ddlMeetingYear")));
 		Year.selectByValue("2016");
 		TimeUnit.SECONDS.sleep(2);
 		Select Date=new Select(dr.findElement(By.id("ctl06_ddlMeetingDate")));
-		Date.selectByValue("96");
+		Date.selectByVisibleText("2016/11/22");
 		TimeUnit.SECONDS.sleep(3);
 		dr.findElement(By.id("ctl06_imgbtnSave")).click();
 		dr.findElement(By.id("ctl02_imgbtnSave")).click();
@@ -181,12 +181,12 @@ public class awdUserEventsReview {
 		dr.switchTo().frame(MeetingActFrame1);
 		Select Committee1=new Select(dr.findElement(By.id("ctl06_ddlCommittee")));
 		Committee1.selectByVisibleText("pp test Committee");
-		TimeUnit.SECONDS.sleep(2);
+		TimeUnit.SECONDS.sleep(4);
 		Select Year1=new Select(dr.findElement(By.id("ctl06_ddlMeetingYear")));
 		Year1.selectByValue("2016");
 		TimeUnit.SECONDS.sleep(2);
 		Select Date1=new Select(dr.findElement(By.id("ctl06_ddlMeetingDate")));
-		Date1.selectByValue("96");
+		Date1.selectByVisibleText("2016/11/22");
 		TimeUnit.SECONDS.sleep(3);
 		dr.findElement(By.id("ctl06_imgbtnSave")).click();
 		dr.findElement(By.id("ctl02_imgbtnSave")).click();
@@ -195,10 +195,10 @@ public class awdUserEventsReview {
 		System.out.println("Event sent for Review done successfully");
   }
   
-  @Test(enabled=false, priority=5)
+  @Test(enabled=true, priority=5)
 	public void ReviewerApproval() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[2]/a")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
@@ -268,7 +268,7 @@ public class awdUserEventsReview {
   @Test(enabled=true, priority=6)
 	public void AwdUserEventApproval() throws InterruptedException, AWTException, IOException {
 	  	
-//		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
+		dr.findElement(By.xpath("html/body/div[1]/ul/li[1]/a")).click();
 	  	dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.findElement(By.id("txtUsername")).sendKeys(Constants.AwardUser);
 		dr.findElement(By.id("txtPassword")).sendKeys(Constants.AwardUserPass);
@@ -302,7 +302,7 @@ public class awdUserEventsReview {
   @BeforeMethod
   public void beforeMethod() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to(Constants.RomeoURL);
+		dr.navigate().to(Constants.BaseURL);
 //		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
