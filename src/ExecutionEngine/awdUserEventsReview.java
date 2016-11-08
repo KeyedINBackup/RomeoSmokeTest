@@ -262,7 +262,7 @@ public class awdUserEventsReview {
 		Alert alt1=dr.switchTo().alert();
 		alt1.accept();
 		TimeUnit.SECONDS.sleep(4);
-		System.out.println("Event Reviewes successfully");
+		System.out.println("Event Reviewed successfully");
 	  }
 
   @Test(enabled=true, priority=6)
@@ -302,8 +302,9 @@ public class awdUserEventsReview {
   @BeforeMethod
   public void beforeMethod() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to(Constants.BaseURL);
+//		dr.navigate().to(Constants.RomeoURL);
 //		dr.navigate().to(Constants.RPURL);
+	  	dr.navigate().to(Constants.BaseURL);
 		dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
   }

@@ -102,7 +102,7 @@ public class awdUserAppReview {
 		Select milestone= new Select(dr.findElement(By.id("cboMileStoneName")));
 		milestone.selectByIndex(3);
 		dr.findElement(By.id("txtComment")).sendKeys("Milestone test comment");
-		dr.findElement(By.id("rdpMileStoneDueDate_dateInput")).sendKeys("2016/10/22");
+		dr.findElement(By.id("rdpMileStoneDueDate_dateInput")).sendKeys("2016/11/22");
 		dr.findElement(By.id("cbIsRemindResearcher")).click();
 		dr.findElement(By.id("imgbtnSave")).click();
 		System.out.println("Milestone created and Reminder added successfully");
@@ -111,6 +111,8 @@ public class awdUserAppReview {
 		WebElement ComposeMailFrame=dr.findElement(By.name("rwSendEmail"));
 		dr.switchTo().frame(ComposeMailFrame);
 		dr.findElement(By.id("txtTo")).sendKeys("ppromeotest@gmail.com");
+		Select seloption=new Select(dr.findElement(By.id("cboEmailBody")));
+		seloption.selectByVisibleText("pp test Email");
 		WebElement EMailContentFrame=dr.findElement(By.id("rtbEmailBody_contentIframe"));
 		dr.switchTo().frame(EMailContentFrame);
 		dr.findElement(By.xpath("html/body")).sendKeys("This is sample mail for testing purpose");
@@ -134,8 +136,9 @@ public class awdUserAppReview {
   @BeforeMethod
   public void beforeMethod() {
 	  	dr= new FirefoxDriver();
-		dr.navigate().to(Constants.BaseURL);
+//		dr.navigate().to(Constants.RomeoURL);
 //		dr.navigate().to(Constants.RPURL);
+	  	dr.navigate().to(Constants.BaseURL);
 		dr.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		

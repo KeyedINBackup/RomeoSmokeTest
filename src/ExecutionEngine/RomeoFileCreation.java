@@ -241,6 +241,7 @@ public class RomeoFileCreation {
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl00_imgbtnAdd")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_MeetingDateDtPicker_dateInput")).sendKeys("2016/11/22");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_TB_MeetingLocationColumn")).sendKeys("test location");
+		TimeUnit.SECONDS.sleep(3);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctrlMasterTableItemElement_txtName")).sendKeys("pp test Committee");
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_ctl00_pnlAdditionProperties_i1_i0_ctrlCommitteeSchedule_radgrdCommitteeMeetingSchedule_ctl00_ctl02_ctl02_imgbtnSaveNew")).click();
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_ctrlContent_imgbtnSave")).click();		

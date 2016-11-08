@@ -49,6 +49,7 @@ public class Filedelete {
 		InvestigatorDeletion();
 		FacultyDeletion();
 		
+		
   }
   
   public static void FacultyDeletion() throws InterruptedException {

@@ -146,7 +146,7 @@ public class ApplicationSubmitTest {
 	  TimeUnit.SECONDS.sleep(2);
 	  dr.findElement(By.id("btnSubmit")).click();
 	  System.out.println("Application Approved successfuly");
-	  TimeUnit.SECONDS.sleep(3);
+	  TimeUnit.SECONDS.sleep(5);
   }
   
   
@@ -156,7 +156,7 @@ public class ApplicationSubmitTest {
 	  	dr= new FirefoxDriver();
 		dr.navigate().to(Constants.RPURL);
 		dr.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
-//	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
+	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys(Constants.SuperUser);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
 		dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
