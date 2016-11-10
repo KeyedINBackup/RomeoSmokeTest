@@ -22,7 +22,7 @@ public class RomeoFileCreation {
 	public static String win1, InvestigatorID1, InvestigatorID2;
 	
   @Test(enabled=true, priority=1, groups="FileCreation")
-  public void FacultyFileCreation() throws InterruptedException {
+  public void FileCreation() throws InterruptedException {
 	  	dr.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
 	  	dr.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
 //	  	dr.findElement(By.xpath(".//*[@id='content']/ul/li[4]/a")).click();

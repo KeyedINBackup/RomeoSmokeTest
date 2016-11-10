@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="259151" started-at="2016-11-08T14:38:55Z" finished-at="2016-11-08T14:43:14Z">
+  <suite name="Default suite" duration-ms="334188" started-at="2016-11-09T13:53:01Z" finished-at="2016-11-09T13:58:35Z">
     <groups>
       <group name="FileCreation">
-        <method signature="Filedelete.FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" class="ExecutionEngine.Filedelete"/>
+        <method signature="Filedelete.FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@17dabf4]" name="FileDeletion" class="ExecutionEngine.Filedelete"/>
       </group> <!-- FileCreation -->
     </groups>
-    <test name="Default test" duration-ms="259151" started-at="2016-11-08T14:38:55Z" finished-at="2016-11-08T14:43:14Z">
+    <test name="Default test" duration-ms="334188" started-at="2016-11-09T13:53:01Z" finished-at="2016-11-09T13:58:35Z">
       <class name="ExecutionEngine.Filedelete">
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="SignIn" is-config="true" duration-ms="12817" started-at="2016-11-08T20:08:55Z" finished-at="2016-11-08T20:09:08Z">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@17dabf4]" name="SignIn" is-config="true" duration-ms="17695" started-at="2016-11-09T19:23:01Z" finished-at="2016-11-09T19:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="FacultyFileCreation()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FacultyFileCreation" duration-ms="237760" started-at="2016-11-08T20:09:08Z" finished-at="2016-11-08T20:13:06Z">
+        <test-method status="PASS" signature="FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@17dabf4]" name="FileDeletion" duration-ms="308045" started-at="2016-11-09T19:23:19Z" finished-at="2016-11-09T19:28:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FacultyFileCreation -->
-        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="EOF" is-config="true" duration-ms="8557" started-at="2016-11-08T20:13:06Z" finished-at="2016-11-08T20:13:14Z">
+        </test-method> <!-- FileDeletion -->
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@17dabf4]" name="EOF" is-config="true" duration-ms="8433" started-at="2016-11-09T19:28:27Z" finished-at="2016-11-09T19:28:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EOF -->
