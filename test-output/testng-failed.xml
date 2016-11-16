@@ -6,7 +6,7 @@
       <class name="ExecutionEngine.Filedelete">
         <methods>
           <include name="EOF"/>
-          <include name="FacultyFileCreation"/>
+          <include name="FileDeletion"/>
           <include name="SignIn"/>
         </methods>
       </class> <!-- ExecutionEngine.Filedelete -->

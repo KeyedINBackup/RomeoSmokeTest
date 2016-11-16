@@ -25,7 +25,7 @@ public class RPWithdrawTest {
         wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
         wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).click();
         wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).clear();
-        wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("sudemo");
+        wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
         wd.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
         wd.findElement(By.linkText("Work as Researcher")).click();
         wd.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).click();

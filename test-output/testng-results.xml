@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="334188" started-at="2016-11-09T13:53:01Z" finished-at="2016-11-09T13:58:35Z">
+  <suite name="Default suite" duration-ms="277874" started-at="2016-11-15T13:11:46Z" finished-at="2016-11-15T13:16:23Z">
     <groups>
       <group name="FileCreation">
-        <method signature="Filedelete.FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@17dabf4]" name="FileDeletion" class="ExecutionEngine.Filedelete"/>
+        <method signature="Filedelete.FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FileDeletion" class="ExecutionEngine.Filedelete"/>
       </group> <!-- FileCreation -->
     </groups>
-    <test name="Default test" duration-ms="334188" started-at="2016-11-09T13:53:01Z" finished-at="2016-11-09T13:58:35Z">
+    <test name="Default test" duration-ms="277874" started-at="2016-11-15T13:11:46Z" finished-at="2016-11-15T13:16:23Z">
       <class name="ExecutionEngine.Filedelete">
-        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@17dabf4]" name="SignIn" is-config="true" duration-ms="17695" started-at="2016-11-09T19:23:01Z" finished-at="2016-11-09T19:23:19Z">
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="SignIn" is-config="true" duration-ms="21571" started-at="2016-11-15T18:41:46Z" finished-at="2016-11-15T18:42:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SignIn -->
-        <test-method status="PASS" signature="FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@17dabf4]" name="FileDeletion" duration-ms="308045" started-at="2016-11-09T19:23:19Z" finished-at="2016-11-09T19:28:27Z">
+        <test-method status="FAIL" signature="FileDeletion()[pri:1, instance:ExecutionEngine.Filedelete@2d8a59]" name="FileDeletion" duration-ms="255410" started-at="2016-11-15T18:42:07Z" finished-at="2016-11-15T18:46:23Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (534, 45.26666259765625). Other element would receive the click: <span class="rmText rmExpandDown"></span>
+Command duration or timeout: 111 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'sakthivel-PC', ip: '172.16.11.74', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0'
+Session ID: 8de23baa-5254-46c6-a84d-39ce4e483f01
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=46.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (534, 45.26666259765625). Other element would receive the click: <span class="rmText rmExpandDown"></span>
+Command duration or timeout: 111 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
+System info: host: 'sakthivel-PC', ip: '172.16.11.74', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0'
+Session ID: 8de23baa-5254-46c6-a84d-39ce4e483f01
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=46.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at ExecutionEngine.Filedelete.FacultyDeletion(Filedelete.java:59)
+	at ExecutionEngine.Filedelete.FileDeletion(Filedelete.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FileDeletion -->
-        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@17dabf4]" name="EOF" is-config="true" duration-ms="8433" started-at="2016-11-09T19:28:27Z" finished-at="2016-11-09T19:28:35Z">
+        <test-method status="PASS" signature="EOF()[pri:0, instance:ExecutionEngine.Filedelete@2d8a59]" name="EOF" is-config="true" duration-ms="867" started-at="2016-11-15T18:46:23Z" finished-at="2016-11-15T18:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EOF -->

@@ -43,7 +43,7 @@ public class Filedelete {
 		ReviewActivityStatus();
 		letterDoc();
 		EventActivity();
-		EventCategory();
+//		EventCategory();
 		EmailBody();
 		OtherSigningAuthority();
 		InvestigatorDeletion();

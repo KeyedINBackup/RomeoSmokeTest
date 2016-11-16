@@ -30,12 +30,9 @@ public class RPAttachments {
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("su");
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).click();
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).clear();
-        dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys("sudemo");
+        dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtPassword")).sendKeys(Constants.SuperUserPass);
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_btnSubmit")).click();
         dr.findElement(By.linkText("Work as Researcher")).click();
-        dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).click();
-        dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).clear();
-        dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeo");
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).click();
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).clear();
         dr.findElement(By.id("ctl00_ContentPlaceHolder1_txtUserName")).sendKeys("ppromeotest@gmail.com");
@@ -70,7 +67,7 @@ public class RPAttachments {
     
     @AfterMethod
     public void tearDown() {
-        dr.quit();
+      
     }
     
 }
